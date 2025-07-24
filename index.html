@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio - Mauricio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a mi portafolio</h1>
+    <p>Programador web en formación</p>
+  </header>
+
+  <section class="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="grid">
+      <div class="card" onclick="abrirModal('Proyecto 1', 'HTML, CSS', 'https://ejemplo.com/demo1')">
+        <h3>Proyecto 1</h3>
+        <p>Descripción breve del proyecto 1</p>
+      </div>
+      <div class="card" onclick="abrirModal('Proyecto 2', 'JavaScript, HTML', 'https://ejemplo.com/demo2')">
+        <h3>Proyecto 2</h3>
+        <p>Descripción breve del proyecto 2</p>
+      </div>
+      <div class="card" onclick="abrirModal('Proyecto 3', 'React, Tailwind', 'https://ejemplo.com/demo3')">
+        <h3>Proyecto 3</h3>
+        <p>Descripción breve del proyecto 3</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p><strong>Tecnologías usadas:</strong> <span id="modal-tech"></span></p>
+      <a id="modal-link" href="#" target="_blank">Ver Demo</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Mauricio Prada</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
